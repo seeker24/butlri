@@ -4,7 +4,7 @@ local function get_helped_string(key)
 	if key == 'start' then
 		return _([[
 Hello %s 👋🏼, nice to meet you!
-I'm Group Butler, the first administration bot using the official Bot API.
+I'm Miniultrabot, the first administration bot using the official Bot API.
 
 *I can do a lot of cool stuffs*, here's a short list:
 • I can *kick or ban* users
