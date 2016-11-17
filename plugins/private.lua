@@ -5,7 +5,7 @@ local function do_keyboard_credits()
     keyboard.inline_keyboard = {
     	{
     		{text = _("Channel"), url = 'https://telegram.me/'..config.channel:gsub('@', '')},
-    		{text = _("GitHub"), url = 'https://github.com/RememberTheAir/GroupButler'},
+    		{text = _("GitHub"), url = 'https://github.com/golsarpm_bot'},
     		{text = _("Rate me!"), url = 'https://telegram.me/storebot?start='..bot.username},
 		},
 		{
@@ -47,7 +47,7 @@ function plugin.onTextMessage(msg, blocks)
 	end
 	if blocks[1] == 'about' then
 		local keyboard = do_keyboard_credits()
-		local text = _("This bot is based on [otouto](https://github.com/topkecleon/otouto) (AKA @mokubot, channel: @otouto), a multipurpose Lua bot.\nGroup Butler wouldn't exist without it.\n\nThe owner of this bot is @bac0nnn, do not pm him: use /groups command instead.\n\nBot version: `%s`\n*Some useful links:*"):format(config.human_readable_version .. ' rev.' .. bot.revision)
+		local text = _("This bot is based on [otouto](https://telegram.me/owners_groups) (Miniultra Bot, channel: @owners_groups), a multipurpose Lua bot.\nminiultrabot wouldn't exist without it.\n\nThe owner of this bot is @nightmaster, do not pm him: use /groups command instead.\n\nBot version: `%s`\n*Some useful links:*"):format(config.human_readable_version .. ' rev.' .. bot.revision)
 		api.sendMessage(msg.chat.id, text, true, keyboard)
 	end
 	if blocks[1] == 'groups' then
